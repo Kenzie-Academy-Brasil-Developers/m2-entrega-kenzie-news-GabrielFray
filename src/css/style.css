@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Roboto Slab", serif;
+}
+body {
+  background: #e0e0e0;
+}
+.cabecalho {
+  background-color: #5163d3;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__notice {
+  max-width: 100%;
+}
+.main__article {
+  height: 280px;
+  margin: 30px 0px;
+  display: flex;
+  align-items: flex-end;
+}
+.main__article .info__content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  gap: 21px;
+  padding: 20px;
+}
+.info__content span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  color: #5163d3;
+  border-radius: 4px;
+  font-size: 10px;
+  height: 18px;
+  width: 100px;
+  font-weight: 500;
+}
+.main__article .info__content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffff;
+  width: 300px;
+}
+.info__content .fonte {
+  font-size: 12px;
+  font-weight: 300;
+  color: #ffffff;
+}
+.main__article img {
+  height: 100%;
+  opacity: 0.8;
+}
+.content__others__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 30px;
+}
+.others__articles {
+  width: 90%;
+  height: 180px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+.others__articles .info__content {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 0px 16px;
+}
+.others__articles span {
+  background: #d7e4fb;
+  color: #5163d3;
+  width: 100px;
+  height: 22px;
+}
+.others__articles h2 {
+  font-size: 16px;
+  color: #5163d3;
+}
+.resumo {
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.others__articles .fonte {
+  color: #1b1c1e;
+}
+.others__articles img {
+  display: none;
+}
+.rodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee;
+  height: 48px;
+  width: 100%;
+}
+.rodape span {
+  font-weight: 300;
+  font-size: 12px;
+  color: #000000;
+}
+
+@media (min-width: 410px) {
+}
