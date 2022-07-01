@@ -40,7 +40,7 @@ body {
   color: #5163d3;
   border-radius: 4px;
   font-size: 10px;
-  height: 18px;
+  height: 22px;
   width: 100px;
   font-weight: 500;
 }
@@ -50,6 +50,9 @@ body {
   color: #ffff;
   width: 300px;
 }
+.main__article .resumo {
+  display: none;
+}
 .info__content .fonte {
   font-size: 12px;
   font-weight: 300;
@@ -57,7 +60,7 @@ body {
 }
 .main__article img {
   height: 100%;
-  width: 320px;
+  width: 100vw;
   opacity: 0.8;
 }
 .content__others__article {
@@ -116,5 +119,91 @@ body {
   color: #000000;
 }
 
-@media (min-width: 410px) {
+@media (min-width: 768px) {
+  .main__article .info__content {
+    position: relative;
+    background-color: #ffffff;
+    height: 100%;
+    border-radius: 4px;
+  }
+  .main__article .info__content span {
+    background: #d7e4fb;
+    color: #5163d3;
+  }
+  .main__article .info__content h2 {
+    color: #5163d3;
+    width: 100%;
+  }
+  .main__article .resumo {
+    display: block;
+    color: #000000;
+    width: 26.25em;
+  }
+  .main__article .fonte {
+    color: #1b1c1e;
+  }
+  .main__article img {
+    width: 300px;
+    object-fit: cover;
+    border-radius: 0px 4px 4px 0px;
+    opacity: 1;
+  }
+  .others__articles {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .others__articles .info__content {
+    width: 74%;
+  }
+  .others__articles img {
+    display: block;
+    width: 24vw;
+    height: 180px;
+    border-radius: 4px 0px 0px 4px;
+  }
+}
+@media (min-width: 1024px) {
+  .main__article {
+    width: 90%;
+    margin: 34px auto;
+  }
+  .main__article img {
+    width: 380px;
+  }
+}
+@media (min-width: 1440px) {
+  .main__notice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__article {
+    width: 980px;
+    height: 360px;
+  }
+  .main__article .info__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .main__article img {
+    width: 380px;
+    height: 360px;
+  }
+  .content__others__article {
+    width: 1230px;
+    height: 820px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .others__articles {
+    width: 569px;
+    height: 180px;
+  }
+  .others__articles img {
+    width: 180px;
+    height: 180px;
+  }
 }
